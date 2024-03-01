@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Jenna Moon
+Student ID#: 134957224
+Email      : jmoon32@myseneca.ca
+Section    : NCC
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Determining the customer preference based on the number of servings to the available coffee bag weights 
+required a more complex logical expression. Copy your submitted code for only this part of the logic, and 
+explain the following:
+A) How many relational expressions did you use and identify each of them.
+    printf(" 1|       %d         |      %d      |   %d   |\n",
+        strength == 'l' || strength == 'L', dailyServings >= 1 && dailyServings <= 4, cream == 'y' || cream == 'Y');
+    printf(" 2|       %d         |      %d      |   %d   |\n",
+        strength == 'r' || strength == 'R', dailyServings >= 5 && dailyServings <= 9, cream == 'n' || cream == 'N');
+    printf(" 3|       %d         |      %d      |   %d   |\n",
+        strength == 'm' || strength == 'M', dailyServings >= 10, cream == 'n' || cream == 'N');
+
+	In this code, there are seventeen relational expressions. 
+In the ID 1, I wrote strength == 'l' || strength == 'L'to see if the variable 'strength' is equal to either 'l' or(||) 'L'.
+The expression, dailyServings >= 1 && dailyServings <= 4, is for checking whether the variable 'dailyServings' is greater than 
+or equal to 1 and less than or equal to 4. The cream == 'y' || cream == 'Y' asks if the variable cream is equal to either 'y' or 'Y'.
+In the ID 2, the expression, strength == 'r' || strength == 'R' checks if the variable 'strength' is either equal to 'r' or(||) 'R'.
+The expression, dailyServings >= 5 && dailyServings <= 9, is for determining whether the variable 'dailyServings' is greater than
+ or equal to 5 and(&&) less than or equal to 9. The cream == 'n' || cream == 'N' checks if the variable cream is equal to either 'n' or 'N'.
+In the ID 3, strength == 'm' || strength == 'M' checks if the variable 'strength' is either equal to 'm' or(||) 'M'.
+The expression, dailyServings >= 10 is for checking whether the variable 'dailyServings' is greater than or equal to 10. 
+The cream == 'n' || cream == 'N' checks if the variable cream is equal to either 'n' or 'N'.
+
+B) How many logical expressions did you use and identify each of them.
+
+	 In the ID 1, the strength == 'l' || strength == 'L' and cream == 'y' || cream == 'Y'expressions
+ uses the logical operator, 'or'(||) to connect relational expressions. The logical operator(&&) was used for dailyServings 
+variables relational expressions. In the ID 2, ||(or), the logical operator was used for both the strength == 'r' || strength == 'R'
+ and cream == 'y' || cream == 'Y'expression. The logical operator(&&) was used for checking dailyServings variables. In the ID 3, 
+For combining the variable strength relational expressions and the variable cream expressions, the logical operator, or(||) was used. 
+But for dailyServings I didn't use any logical operator. So in total, there are eight logical expressions. 
+
+
+2. Referring to Part-1 output #9, show how that logic can be coded in TWO correct ways, one applying 
+DeMorgan’s Law and the other way not using DeMorgan’s Law. Also, identify what method you used in your 
+submitted answer for Part-1.
+
+	The logic can be written as ' PRODUCT3_ID != PRODUCT1_ID && PRODUCT3_ID != PRODUCT2_ID' or 
+!(PRODUCT3_ID == PRODUCT1_ID || PRODUCT3_ID == PRODUCT2_ID) which is DeMorgan's law. 
+They are essentially the same by negating inide the bracket values and changing the logical operator from 'and'(&&) to 'or'(||). 
+but I didn't use DeMorgan's law in this code simply because it was straightforward from the instruction.
+
+
+3. Using the variables you used in Part-2, demonstrate two ways you can organize them, so it is optimized for easy 
+to maintain code and contributes towards clarity in how data is stored in the program.
+
+First, in Variable declarations, all variables was declared together into meaningful groups at the top of the main 
+function.  Meaningful and appropriate names also have been used for the variables names to help make the data easy to read. 
+Second, by applying relational and logical expressions to produce true or false, clarity and visibility of the code increases, 
+and the data is a lot easier to understand.
