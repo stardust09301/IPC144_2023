@@ -1,0 +1,62 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Jenna Moon
+Student ID#: 134957224
+Email      : jmoon32@myseneca.ca
+Section    : NCC
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Given the following C statements:
+
+float price1 = 17.96f, price3 = 17.98f;
+double price2 = 17.96, price4 = 17.98;
+printf("1. 17.96 = %f (as cents:%d)\n", price1, (int)(price1 * 100));
+printf("2. 17.96 = %lf (as cents:%d)\n", price2, (int)(price2 * 100));
+printf("3. 17.98 = %f (as cents:%d)\n", price3, (int)(price3 * 100));
+printf("4. 17.98 = %lf (as cents:%d)\n", price4, (int)(price4 * 100));
+
+Execute the above sample code on your machine. Briefly explain why price1 and the corresponding converted 
+cent value does not properly represent the intended value. Why do you think all the other samples work as 
+expected?
+ 	
+	%f is float variables with single floating point while %lf is for double.
+price1 is a value with float, but the conversion to cents is integer value when price1 multiply by 100. 
+After multiplication, the value is 1795.9999 but 'int' indicates it will be converted integer value.
+price2 is double value so it prints as 17.960000; however, after conversion to cents with integer value, 
+the value prints out as 1796. Price3 is also float value, so it is 17.980000. But after conversion to cents
+with int bracket, the value is 1798 as cents. Price4 is %lf, double value. So it will print out as 17.980000.
+The int value of that is also 1798. 
+
+2. Execute the below code on your machine:
+
+int money = 7245;
+printf("1. $%.2lf\n", money / 100.0);
+printf("2. $%.2lf\n", money / (double)100);
+printf("3. $%.2lf\n", (double)money / 100);
+Explain why these three examples work as intended. Apply terms like cast, promotion, coercion, implicit, and 
+explicit in your answer.
+
+For the first printf statement, money is divided by 100.0. The result will be double and %2lf shows that 
+the value has two decimal plaes.
+
+3. Execute the following code on your machine:
+
+int result, money = 7245;
+result = money / 100;
+printf("1. $%.2lf\n", money / 100);
+printf("2. $%d\n", money / 100);
+printf("3. $%.2lf\n", result);
+printf("4. $%d\n", result);
+
+Apply terms like cast, promotion, truncation, coercion, implicit, and explicit in answering the following 
+questions.
+a) What is the value of the variable result? Explain why.
+b) What values are displayed for samples 1, 2, 3, and 4?
+c) What can you conclude about the printf function that causes samples 1 and 3 not to work as expected?
