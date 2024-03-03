@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Jenna Moon
+Student ID#: 134957224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+1.	Why do we try to use variables and macros to represent information 
+rather than hardcode “magic” numbers (constant literals)?  Using the details
+ of this workshop, describe at least three advantages this provides us?  
+
+	Different users can keep inputting different numbers to print out different values. 
+Then, the program will calculate the sums and averages based one which data users input 
+rather than we hardcode numbers to print. For the second project, inside the for loop,
+the 'year', the 'month', and 'i' values can vary depending on what data the program collects. 
+The 'sumM', 'sumE', and 'sumAll' values can also be replaced by the new 'sumM', 'sumE', and 
+'sumAll'based on the new mRate and eRate added to the old value. The averages will also be 
+refreshed depending on updated value.  
+	Using macros is easier to maintain the code especially if the code can be written 
+by multiple programmers or for separate projects. I found it enables the code itself to reuse 
+and extend easier when we transitioned from the project#1 to project#2. All we did was to add 
+'#define LOG_DAYS 3',and use it throughout the code as well as the other macros in the previous
+project. Macros are defined by #define directives. It also increases readability and efficiency. 
+The compiler replaces the name with the definition of the macro. Therefore, it is the sequence 
+and patterns that we don't have to come back and change all the time for each occasion. 
+
+ 
+2.	The rating values entered by the user required iteration to perform 
+basic validations with each iteration concentrated on testing for values to 
+be within a specific range.  Why do we not include additional logic that sums
+ and performs the average? Instead, the sum and average logic is placed outside
+ of any validation routine. Briefly explain two reasons why this is better 
+design and refer to the details of this workshop to justify your answer. 
+
+	In my opinion, separating iteration, user selection, and validation made the code more
+manageable. I have trouble fixing the code with the previous project for a long time since separating
+different parts of code is not something I am used to. It was very overwhelming because I couldn't locate
+the errors for a long time. By separating them this time, I was able to modify the code easily without 
+too much frustration. Rather than tracking down what went wrong for hours, the code was definitely more 
+organized and understandable when debugging the program.
+	The rating values entered by the user fall within a specific range each time users input the value. 
+The values can be validated throught the iteration process since it requires multiple ratings for three days. 
+If I need to change the criteria or the calculations later on, I can edit the each part separately. Placing 
+the sum and average logic outside any validation routine will allow me to update the code easily since the
+code can be reusable when updating new calcualtion in the future. It makes the clean code without frustrations. 
+The each part is focused on its specific task and efficiency. 
