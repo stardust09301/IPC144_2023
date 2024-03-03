@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Jenna Moon
+Student ID#: 134957224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Why are there three types of iteration constructs if we can make any one of them behave the same way? Refer
+to your code in this workshop to help backup your answer (do NOT include the code in your answer). Typically,
+when working with arrays, there is one iteration construct we favour – what is it and explain why it is more 
+preferred over the other options.
+	
+	There are while loop, do while and for loops. For loops is very convenient when you know the iteration,
+condition, and it is usually great for increment and decrement. It is still confusing to me but it is only one line 
+and simple. The while loop is simple conditional loop that it checks the condition to see if the loop should be keep going.
+The do-while loop is similar to the while loop, but it can execute the code at least once and check the condition. 
+It is useful when we need to print the code at least once so I prefer it the most. In my code, I use do while for
+ user input income and printing out error messages while valid ==0. Similarly, I use do while for financing and priority
+option to print out errors. When we are getting the items and details iterated,I used for loops to list out all the items
+and let the items incremented itself.
+	
+
+
+2. Describe what you did to both test and debug your program. How did you go about finding where the 
+problems were located (explain how you did this for both syntactic and semantic problems)?
+
+	 First, while I am writing the code, I look at red curly lines to see it there are some errors showing up. And then, 
+I build the solution and run the code without debugging, if there are errors, I see them in the error lists quickly. 
+In the error lists, errors can be spotted and searchable by lines. I checked what lines are showing the errors and
+try to fix the problem. If there are syntax errors, the visual studio usually gives me errors so it is easily spotted.
+But I also need to double check to see if there are sematic problems like logical errors or calculation errors because
+they are not easily spotted. I tried to run without debugging for quickly running the program for easy fix. 
+However, I run the debugging sometimes if there are persistent errors since it can provide breakpoints line by line
+to look for problems.
+
+3. When attempting to submit your work, you receive the following error feedback from the submitter:
+Checking output:
+In line number 6 of your output:
+The output should be:
+Enter your monthly NET income: $0
+ ^
+But your output is:
+Enter your monthly NET income: $567.89
+ ^
+Unmatched character details:
+The character in column 33 is supposed to be:
+ [0] ASCII code(48)
+but you printed
+ [5] ASCII code(53)
+Outputs don't match. Submission aborted!
+To see exactly what is wrong, open the following two files in this
+directory and compare them:
+Your output file: output.txt
+Correct output file: w6p2_master_output.txt
+Using the above explicit information, explain each step you must take to successfully identify and fix your error.
+
+	I check the output.txt and check to see which line has the problem. Since there is user input error in my output, 
+I will try to check the information and re-enter the information. When error occurs, there are master_output.txt, 
+output.txt and differ.txt created in the Seneca matrix server, so I would double-check my output.txt with 
+master_output.txt. I will also double check my code if there are next possible errors since submitter only catches
+one error at a time. 
